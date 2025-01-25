@@ -1,0 +1,79 @@
+.button {
+  padding: var(--button-small-padding, 5px 10px);
+  font-size: var(--button-small-font-size, 14px);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 10rem;
+}
+
+/* Colors */
+.button-primary {
+  background-color: var(--color-primary);
+}
+
+.button-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.button-secondary {
+  background-color: var(--color-secondary);
+}
+
+.button-secondary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.button-success {
+  background-color: var(--color-success);
+}
+
+.button-success:hover {
+  background-color: var(--color-success-hover);
+}
+
+.button-danger {
+  background-color: var(--color-danger);
+}
+
+.button-danger:hover {
+  background-color: var(--color-danger-hover);
+}
+
+.button-info {
+  background-color: var(--color-info);
+}
+
+.button-info:hover {
+  background-color: var(--color-info-hover);
+}
+
+.button-warning {
+  background-color: var(--color-warning);
+}
+
+.button-warning:hover {
+  background-color: var(--color-warning-hover);
+}
+
+/* Sizes */
+.button-small {
+  padding: var(--button-small-padding, 5px 10px);
+  font-size: var(--button-small-font-size, 14px);
+  height: var(--button-small-height, 30px);
+}
+
+.button-medium {
+  padding: var(--button-medium-padding, 10px 20px);
+  font-size: var(--button-medium-font-size, 16px);
+  height: var(--button-medium-height, 30px);
+}
+
+.button-large {
+  padding: var(--button-large-padding, 15px 30px);
+  font-size: var(--button-large-font-size, 18px);
+  height: var(--button-large-height, 30px);
+}
