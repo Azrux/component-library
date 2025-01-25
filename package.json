@@ -1,0 +1,31 @@
+{
+  "name": "component-library",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.1",
+    "@storybook/addon-interactions": "^8.5.1",
+    "@storybook/blocks": "^8.5.1",
+    "@storybook/html": "^8.5.1",
+    "@storybook/html-vite": "^8.5.1",
+    "@storybook/test": "^8.5.1",
+    "@storybook/types": "^8.5.1",
+    "@types/node": "^22.10.10",
+    "storybook": "^8.5.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
