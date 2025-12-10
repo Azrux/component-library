@@ -15,48 +15,74 @@
   background-color: var(--color-primary);
 }
 
-.button-primary:hover {
-  background-color: var(--color-primary-hover);
-}
-
 .button-secondary {
   background-color: var(--color-secondary);
-}
-
-.button-secondary:hover {
-  background-color: var(--color-secondary-hover);
-}
-
-.button-success {
-  background-color: var(--color-success);
-}
-
-.button-success:hover {
-  background-color: var(--color-success-hover);
-}
-
-.button-danger {
-  background-color: var(--color-danger);
-}
-
-.button-danger:hover {
-  background-color: var(--color-danger-hover);
 }
 
 .button-info {
   background-color: var(--color-info);
 }
 
-.button-info:hover {
-  background-color: var(--color-info-hover);
+.button-success {
+  background-color: var(--color-success);
 }
 
 .button-warning {
   background-color: var(--color-warning);
 }
 
+.button-danger {
+  background-color: var(--color-danger);
+}
+
+/* Hover Colors */
+.button-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.button-secondary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.button-success:hover {
+  background-color: var(--color-success-hover);
+}
+
+.button-danger:hover {
+  background-color: var(--color-danger-hover);
+}
+
+.button-info:hover {
+  background-color: var(--color-info-hover);
+}
+
 .button-warning:hover {
   background-color: var(--color-warning-hover);
+}
+
+/* Active Colors */
+.button-primary:active {
+  background-color: var(--color-primary-active);
+}
+
+.button-secondary:active {
+  background-color: var(--color-secondary-active);
+}
+
+.button-info:active {
+  background-color: var(--color-info-active);
+}
+
+.button-success:active {
+  background-color: var(--color-success-active);
+}
+
+.button-warning:active {
+  background-color: var(--color-warning-active);
+}
+
+.button-danger:active {
+  background-color: var(--color-danger-active);
 }
 
 /* Sizes */
@@ -76,4 +102,18 @@
   padding: var(--button-large-padding, 15px 30px);
   font-size: var(--button-large-font-size, 18px);
   height: var(--button-large-height, 30px);
+}
+
+/* Disabled State */
+.button-disabled {
+  background-color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
+.button-disabled:hover {
+  background-color: var(--color-disabled);
+}
+
+.button-disabled:active {
+  background-color: var(--color-disabled);
 }

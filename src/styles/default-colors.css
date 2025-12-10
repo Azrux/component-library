@@ -1,19 +1,27 @@
 :root {
-  --color-primary: #007bff;
-  --color-primary-hover: #0056b3;
+  --color-primary: #ff4684;
+  --color-primary-hover: #e03e75;
+  --color-primary-active: #c73666;
 
   --color-secondary: #6c757d;
   --color-secondary-hover: #5a6268;
+  --color-secondary-active: #545b62;
+
+  --color-info: #007bff;
+  --color-info-hover: #0056b3;
+  --color-info-active: #004085;
 
   --color-success: #28a745;
   --color-success-hover: #218838;
+  --color-success-active: #1e7e34;
 
   --color-danger: #dc3545;
   --color-danger-hover: #c82333;
-
-  --color-info: #17a2b8;
-  --color-info-hover: #138496;
+  --color-danger-active: #bd2130;
 
   --color-warning: #ffc107;
   --color-warning-hover: #e0a800;
+  --color-warning-active: #d39e00;
+
+  --color-disabled: #cccccc;
 }

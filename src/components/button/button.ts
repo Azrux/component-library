@@ -1,7 +1,14 @@
 import type { ButtonProps } from "./types";
 
 const Button = (props: ButtonProps): HTMLButtonElement => {
-  const { text, color = "primary", size = "medium", style } = props;
+  const {
+    text,
+    color = "primary",
+    size = "medium",
+    style,
+    disabled,
+    ...rest
+  } = props;
 
   const button = document.createElement("button");
   button.className = "button";
@@ -27,13 +34,19 @@ const Button = (props: ButtonProps): HTMLButtonElement => {
     button.style.padding = size;
   }
 
+  if (disabled) {
+    button.classList.add("button-disabled");
+    button.disabled = true;
+  }
+
   // Define text
   button.innerText = text;
 
-  // Define style
-  if (style) {
-    Object.assign(button.style, style);
-  }
+  // Inline styles
+  if (style) Object.assign(button.style, style);
+
+  // Apply all other native button props
+  Object.assign(button, rest);
 
   return button;
 };

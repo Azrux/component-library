@@ -12,13 +12,16 @@ export default {
         type: "text",
       },
     },
+    disabled: {
+      control: { type: "boolean" },
+    },
   },
 };
 
 const Template: StoryFn<StorybookButtonProps> = (args) => {
   const color = args.colorType === "custom" ? args.customColor : args.colorType;
   const size = args.sizeType === "custom" ? args.customSize : args.sizeType;
-  return ButtonComponent({ text: args.text, color, size, style: args.style });
+  return ButtonComponent({ color, size, ...args });
 };
 
 // Default
