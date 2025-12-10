@@ -1,88 +1,65 @@
 .button {
-  padding: var(--button-small-padding, 5px 10px);
-  font-size: var(--button-small-font-size, 14px);
+  padding: var(--button-medium-padding, 10px 20px);
+  font-size: var(--button-medium-font-size, 16px);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
   transition: background-color 0.3s ease;
   width: 10rem;
+  background-color: var(--button-bg);
+}
+
+/* Hover & Active */
+.button:not(:disabled):hover {
+  background-color: var(--button-bg-hover);
+}
+
+.button:not(:disabled):active {
+  background-color: var(--button-bg-active);
+}
+
+/* Disabled */
+.button:disabled {
+  background-color: var(--color-disabled, #aaa);
+  cursor: not-allowed;
 }
 
 /* Colors */
 .button-primary {
-  background-color: var(--color-primary);
+  --button-bg: var(--color-primary);
+  --button-bg-hover: var(--color-primary-hover);
+  --button-bg-active: var(--color-primary-active);
 }
 
 .button-secondary {
-  background-color: var(--color-secondary);
+  --button-bg: var(--color-secondary);
+  --button-bg-hover: var(--color-secondary-hover);
+  --button-bg-active: var(--color-secondary-active);
 }
 
 .button-info {
-  background-color: var(--color-info);
+  --button-bg: var(--color-info);
+  --button-bg-hover: var(--color-info-hover);
+  --button-bg-active: var(--color-info-active);
 }
 
 .button-success {
-  background-color: var(--color-success);
+  --button-bg: var(--color-success);
+  --button-bg-hover: var(--color-success-hover);
+  --button-bg-active: var(--color-success-active);
 }
 
 .button-warning {
-  background-color: var(--color-warning);
+  --button-bg: var(--color-warning);
+  --button-bg-hover: var(--color-warning-hover);
+  --button-bg-active: var(--color-warning-active);
 }
 
 .button-danger {
-  background-color: var(--color-danger);
-}
-
-/* Hover Colors */
-.button-primary:hover {
-  background-color: var(--color-primary-hover);
-}
-
-.button-secondary:hover {
-  background-color: var(--color-secondary-hover);
-}
-
-.button-success:hover {
-  background-color: var(--color-success-hover);
-}
-
-.button-danger:hover {
-  background-color: var(--color-danger-hover);
-}
-
-.button-info:hover {
-  background-color: var(--color-info-hover);
-}
-
-.button-warning:hover {
-  background-color: var(--color-warning-hover);
-}
-
-/* Active Colors */
-.button-primary:active {
-  background-color: var(--color-primary-active);
-}
-
-.button-secondary:active {
-  background-color: var(--color-secondary-active);
-}
-
-.button-info:active {
-  background-color: var(--color-info-active);
-}
-
-.button-success:active {
-  background-color: var(--color-success-active);
-}
-
-.button-warning:active {
-  background-color: var(--color-warning-active);
-}
-
-.button-danger:active {
-  background-color: var(--color-danger-active);
+  --button-bg: var(--color-danger);
+  --button-bg-hover: var(--color-danger-hover);
+  --button-bg-active: var(--color-danger-active);
 }
 
 /* Sizes */
@@ -95,25 +72,11 @@
 .button-medium {
   padding: var(--button-medium-padding, 10px 20px);
   font-size: var(--button-medium-font-size, 16px);
-  height: var(--button-medium-height, 30px);
+  height: var(--button-medium-height, 34px);
 }
 
 .button-large {
   padding: var(--button-large-padding, 15px 30px);
   font-size: var(--button-large-font-size, 18px);
-  height: var(--button-large-height, 30px);
-}
-
-/* Disabled State */
-.button-disabled {
-  background-color: var(--color-disabled);
-  cursor: not-allowed;
-}
-
-.button-disabled:hover {
-  background-color: var(--color-disabled);
-}
-
-.button-disabled:active {
-  background-color: var(--color-disabled);
+  height: var(--button-large-height, 38px);
 }
