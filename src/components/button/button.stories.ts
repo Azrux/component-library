@@ -20,7 +20,7 @@ export default {
 
 const Template: StoryFn<StorybookButtonProps> = (args) => {
   const color = args.colorType === "custom" ? args.customColor : args.colorType;
-  const size = args.sizeType === "custom" ? args.customSize : args.sizeType;
+  const size = args.sizeType;
   return ButtonComponent({ color, size, ...args });
 };
 
@@ -100,13 +100,7 @@ SizeCustomization.argTypes = {
     control: {
       type: "radio",
     },
-    options: [...SIZES, "custom"],
-  },
-  customSize: {
-    control: {
-      type: "text",
-    },
-    if: { arg: "sizeType", eq: "custom" },
+    options: [...SIZES],
   },
   style: {
     control: {

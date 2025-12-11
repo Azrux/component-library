@@ -1,0 +1,18 @@
+.label-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: var(--button-small-font-size);
+  color: var(--color-text);
+}
+
+.label-required {
+  color: var(--color-danger);
+}
+
+.label-error {
+  color: var(--color-danger);
+}

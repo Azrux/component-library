@@ -6,4 +6,5 @@ export const COLORS = [
   "warning",
   "success",
 ];
+
 export const SIZES = ["small", "medium", "large"];

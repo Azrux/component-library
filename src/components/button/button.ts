@@ -28,10 +28,8 @@ const Button = (props: ButtonProps): HTMLButtonElement => {
   }
 
   // Define size
-  if (size === "small" || size === "medium" || size === "large") {
+  if (size) {
     button.classList.add(`button-${size}`);
-  } else if (typeof size === "string") {
-    button.style.padding = size;
   }
 
   if (disabled) {

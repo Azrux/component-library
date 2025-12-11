@@ -1,13 +1,13 @@
 :root {
-  --button-small-padding: 5px 10px;
-  --button-small-font-size: 14px;
-  --button-smail-height: 30px;
+  --small-padding: 5px 10px;
+  --small-font-size: 14px;
+  --smail-height: 30px;
 
-  --button-medium-padding: 10px 20px;
-  --button-medium-font-size: 16px;
-  --button-medium-height: 40px;
+  --medium-padding: 10px 20px;
+  --medium-font-size: 16px;
+  --medium-height: 40px;
 
-  --button-large-padding: 15px 30px;
-  --button-large-font-size: 18px;
-  --button-large-height: 50px;
+  --large-padding: 15px 30px;
+  --large-font-size: 18px;
+  --large-height: 50px;
 }

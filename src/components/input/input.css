@@ -1,0 +1,67 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.input {
+  padding: var(--input-medium-padding, 10px 12px);
+  font-size: var(--input-medium-font-size, 16px);
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:hover {
+  border-color: var(--color-primary-hover);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+/* Disabled */
+.input-disabled {
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
+.input-disabled:hover {
+  border-color: var(--color-disabled);
+}
+
+/* Error State */
+.input-error {
+  border-color: var(--color-danger);
+}
+
+.input-error:focus {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 2px var(--color-danger);
+}
+
+.input-error-message {
+  color: var(--color-danger);
+  font-size: 12px;
+}
+
+/* Sizes */
+.input-small {
+  padding: var(--small-padding);
+  font-size: var(--small-font-size);
+}
+
+.input-medium {
+  padding: var(--medium-padding);
+  font-size: var(--medium-font-size);
+}
+
+.input-large {
+  padding: var(--large-padding);
+  font-size: var(--large-font-size);
+}

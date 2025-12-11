@@ -64,19 +64,19 @@
 
 /* Sizes */
 .button-small {
-  padding: var(--button-small-padding, 5px 10px);
-  font-size: var(--button-small-font-size, 14px);
-  height: var(--button-small-height, 30px);
+  padding: var(--small-padding, 5px 10px);
+  font-size: var(--small-font-size, 14px);
+  height: var(--small-height, 30px);
 }
 
 .button-medium {
-  padding: var(--button-medium-padding, 10px 20px);
-  font-size: var(--button-medium-font-size, 16px);
-  height: var(--button-medium-height, 34px);
+  padding: var(--medium-padding, 10px 20px);
+  font-size: var(--medium-font-size, 16px);
+  height: var(--medium-height, 34px);
 }
 
 .button-large {
-  padding: var(--button-large-padding, 15px 30px);
-  font-size: var(--button-large-font-size, 18px);
-  height: var(--button-large-height, 38px);
+  padding: var(--large-padding, 15px 30px);
+  font-size: var(--large-font-size, 18px);
+  height: var(--large-height, 38px);
 }
