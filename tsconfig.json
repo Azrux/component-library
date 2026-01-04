@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "target": "ES2024",
+    "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
 
     /* Linting */
     "strict": true,
@@ -25,5 +25,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", ".storybook"]
+  "exclude": ["src/main.ts", ".storybook"],
+  "include": ["src"]
 }
